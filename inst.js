@@ -9,9 +9,6 @@ var __inst_state = {
 };
 
 function inst() {
-    let p = performance.now();
-    const comps = [];
-
     if (typeof __inst_state !== "object" || __inst_state.components.constructor !== Array) {
         console.warn(Error(`(inst.js):\n  --> Invalid/undefined state-container "__inst_state".\n  --> Creating new one.`));
         __inst_state = { components: [] };
@@ -70,7 +67,6 @@ function inst() {
                     if (!globalStyleObj[attribute.value]) globalStyleObj[attribute.value] = selector;
                     else globalStyleObj[attribute.value] += `,${selector}`;
                 }
-                // else __inst_state.components[i].style = `${selector}{${attribute.value}}`;
             });
         }
     }
@@ -84,12 +80,9 @@ function inst() {
     }
 
     __inst_style_elem.innerHTML = globalStyle;
-
-    console.log(performance.now() - p);
 }
 
 window.addEventListener("load", () => {
-    inst();
     inst();
     inst();
     inst();

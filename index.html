@@ -7,9 +7,16 @@
 </head>
 
 <body>
-    <comp test(100) style="background-color: #ddd"></comp>
+    <!-- This tag is compiled into a <div> with the content of the given function. -->
+    <!-- The style is globalized. -->
+    <comp func([1, 2, 3]) style="border: 1px solid #000"></comp>
 
-    <script src="index.js"></script>
+    <script>
+        // This is just an example function/component
+        function func(numbers) {
+            return numbers.map(number => `<h1>This is number ${number}.</h1>`).join("");
+        }
+    </script>
     <script src="inst.js"></script>
 </body>
 
