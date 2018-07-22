@@ -27,7 +27,9 @@ The original idea: https://gist.github.com/KargJonas/a484add4ce17f072df7a1c74a60
 ```html
 <head>
     ...
-    <style>div[class="__inst_comp__"][key="0"]{border: 1px solid #000}</style>
+    <style>
+        div[class="__inst_comp__"][key="0"]{border: 1px solid #000}
+    </style>
 </head>
 
 <body>
