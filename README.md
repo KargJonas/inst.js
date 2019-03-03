@@ -1,5 +1,5 @@
 # inst.js
-## A minimalist, zero-dependent, easy to use framework that requires no configuration.
+## A minimalist, zero-dependent, easy to use "ui-framework" that requires no configuration.
 The original idea: https://gist.github.com/KargJonas/a484add4ce17f072df7a1c74a6080cd3
 
 ### Usage
